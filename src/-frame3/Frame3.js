@@ -1,20 +1,40 @@
-import React, { useRef } from 'react'
-import { motion, useScroll, useTransform } from "framer-motion"
+import React from 'react'
+import { motion } from "framer-motion"
+import Img0 from './0.jpg'
+import Img1 from './1.png'
+import Img3 from './3.png'
 
 export default function Frame3({ Prev }) {
     
-    const divScroll = useRef(null)
+    /*const divScroll = useRef(null)
     const { scrollY } = useScroll({container: divScroll})
 
-    /* text frames */
+    /* text frames /
     const textFrames = [[0,0,2000]]
-    /* transforms */
+    /* transforms /
     const path1 = useTransform(scrollY, [0, 20000], [0,1])
     const yNave = useTransform(scrollY, [0,2000, 6000], [150,150,0])
     const xNave = useTransform(scrollY, [3500,4000,4500,7000], ["0em","-5em","-5em","0em"])
-    const yPlanet = useTransform(scrollY, [2500, 6500],[-700,700])
+    const yPlanet = useTransform(scrollY, [2500, 6500],[-700,700])*/
+
+    const imgs = [Img0,Img1,Img3]
     
     return (
+        <motion.section
+            className='fixed w-full h-full overflow-y-scroll text-xs sm:text-3xl pt-10'
+            style={{prespective: "1000px"}}
+            initial={{scale: 0.1, opacity: 0}}
+            animate={{scale: 1, opacity: 1}}
+            exit={{scale: 0.1, opacity: 0}}
+            transition={{duration: 1.5}}>
+            
+            {Prev}
+
+            {imgs.map((img, id) => 
+                <img className='sm:p-0 md:p-10 sm:w-full md:w-1/2 h-auto mx-auto mb-10 border-4' key={id} alt=':c' src={img}/>
+            )}
+
+        {/*
         <motion.section
         className='fixed w-full h-full overflow-y-scroll flex justify-center items-center text-xs sm:text-3xl'
         animate={{opacity: [0,1], y: [-200, 0]}}
@@ -22,7 +42,7 @@ export default function Frame3({ Prev }) {
         transition={{duration: 1}}
         ref={divScroll}>
 
-            {/* relleno scroll */}<div style={{width: "100%", height: "10000px"}}></div>
+            {/* relleno scroll /}<div style={{width: "100%", height: "10000px"}}></div>
 
             {Prev}
 
@@ -31,7 +51,7 @@ export default function Frame3({ Prev }) {
                 style={{height: "100vh"}}>
 
                 
-                {/* nave */}
+                {/* nave /}
                 <motion.svg 
                     className='absolute'
                     viewBox='0 0 200 400'
@@ -52,6 +72,8 @@ export default function Frame3({ Prev }) {
 
             </div>
 
+        </motion.section>
+        */}
         </motion.section>
     )
 }

@@ -33,7 +33,6 @@ export default function App() {
                 <AnimatePresence>{page === 0 && <Frame0 setPage={setPage}/>}</AnimatePresence>
 
                 <AnimatePresence>{page === 1 && <Frame1 Prev={Prev}/>}</AnimatePresence>
-                <AnimatePresence>{page === 2 && <Frame2 Prev={Prev}/>}</AnimatePresence>
                 <AnimatePresence>{page === 3 && <Frame3 Prev={Prev}/>}</AnimatePresence>
 
             </main>

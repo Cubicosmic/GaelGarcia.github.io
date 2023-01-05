@@ -7,6 +7,7 @@
     margin: 0;
     padding: 0;
     color: #CFB56B;
+    border-color: #CFB56B;
 }
 
 .fondo {
@@ -30,6 +31,16 @@
 section {
     width: 100%;
     height: 100vh;
+}
+
+section::-webkit-scrollbar {
+    width: 10px;
+    background: rgba(200, 200, 150, 0.2);
+}
+section::-webkit-scrollbar-thumb {
+    width: 10px;
+    border-radius: 5px;
+    background: #CFB56B;
 }
 
 .scroling {
