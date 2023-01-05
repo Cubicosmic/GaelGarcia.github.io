@@ -1,13 +1,16 @@
 {
   "files": {
-    "main.css": "/GaelGarciaPortafolios/static/css/main.6797ed02.css",
-    "main.js": "/GaelGarciaPortafolios/static/js/main.317db758.js",
+    "main.css": "/GaelGarciaPortafolios/static/css/main.bfbcb173.css",
+    "main.js": "/GaelGarciaPortafolios/static/js/main.67147292.js",
+    "static/media/3.png": "/GaelGarciaPortafolios/static/media/3.2a67e04aa513c8492ee4.png",
+    "static/media/0.jpg": "/GaelGarciaPortafolios/static/media/0.b377646378c39a16d483.jpg",
+    "static/media/1.png": "/GaelGarciaPortafolios/static/media/1.88e84ea0625d3954f269.png",
     "index.html": "/GaelGarciaPortafolios/index.html",
-    "main.6797ed02.css.map": "/GaelGarciaPortafolios/static/css/main.6797ed02.css.map",
-    "main.317db758.js.map": "/GaelGarciaPortafolios/static/js/main.317db758.js.map"
+    "main.bfbcb173.css.map": "/GaelGarciaPortafolios/static/css/main.bfbcb173.css.map",
+    "main.67147292.js.map": "/GaelGarciaPortafolios/static/js/main.67147292.js.map"
   },
   "entrypoints": [
-    "static/css/main.6797ed02.css",
-    "static/js/main.317db758.js"
+    "static/css/main.bfbcb173.css",
+    "static/js/main.67147292.js"
   ]
 }
